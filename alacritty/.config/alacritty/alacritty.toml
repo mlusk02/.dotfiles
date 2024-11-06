@@ -1,0 +1,32 @@
+[general]
+import = [
+    "~/.config/alacritty/themes/rose_pine.toml"
+]
+
+[window]
+# opacity = 0.7
+# blur = true
+# padding.x = 10
+# padding.y = 10
+
+[font]
+size = 14.0
+
+[font.normal]
+family = "DejaVuSansM Nerd Font Mono"
+style = "Regular"
+
+[font.bold]
+family = "DejaVuSansM Nerd Font Mono"
+style = "Bold"
+
+[font.bold_italic]
+family = "DejaVuSansM Nerd Font Mono"
+style = "Bold Italic"
+
+[font.italic]
+family = "DejaVuSansM Nerd Font Mono"
+style = "Italic"
+
+[env]
+TERM = "xterm-256color"
