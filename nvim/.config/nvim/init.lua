@@ -8,7 +8,7 @@ if not (vim.uv or vim.loop).fs_stat(lazypath) then
   if vim.v.shell_error ~= 0 then
     error('Error cloning lazy.nvim:\n' .. out)
   end
-end 
+end
 vim.opt.rtp:prepend(lazypath)
 
 require('lazy').setup({
@@ -18,5 +18,6 @@ require('lazy').setup({
     { import = "plugins.neo-tree",    cond = (function() return not vim.g.vscode end) },
     { import = "plugins.treesitter",    cond = (function() return not vim.g.vscode end) },
     { import = "plugins.lsp",    cond = (function() return not vim.g.vscode end) },
-    { import = "plugins.snippets",    cond = (function() return not vim.g.vscode end) }
+    { import = "plugins.snippets", cond = (function() return not vim.g.vscode end) },
+    { import = "plugins.vim-tmux-navigator", cond = (function() return not vim.g.vscode end) }
 })
