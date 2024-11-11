@@ -10,7 +10,7 @@ import = [
 # padding.y = 10
 
 [font]
-size = 14.0
+size = 16.0
 
 [font.normal]
 family = "DejaVuSansM Nerd Font Mono"

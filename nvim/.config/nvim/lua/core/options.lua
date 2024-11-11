@@ -22,3 +22,19 @@ vim.o.incsearch = true
 vim.o.cc = "80"
 
 vim.o.termguicolors = true
+
+local autocmd = vim.api.nvim_create_autocmd
+
+autocmd('TextYankPost', {
+  desc = 'Highlight when yanking (copying) text',
+  group = vim.api.nvim_create_augroup('kickstart-highlight-yank', { clear = true }),
+  callback = function()
+    vim.highlight.on_yank()
+  end,
+})
+
+autocmd({"BufWritePre"}, {
+    group = vim.api.nvim_create_augroup('delete-whitespace-on-save', {}),
+    pattern = "*",
+    command = [[%s/\s\+$//e]],
+})

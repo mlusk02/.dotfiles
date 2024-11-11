@@ -15,7 +15,6 @@ require('lazy').setup({
     -- in the future use require "plugins.pluginname"
     { import = "plugins.colortheme",    cond = (function() return not vim.g.vscode end) },
     { import = "plugins.telescope",    cond = (function() return not vim.g.vscode end) },
-    { import = "plugins.neo-tree",    cond = (function() return not vim.g.vscode end) },
     { import = "plugins.treesitter",    cond = (function() return not vim.g.vscode end) },
     { import = "plugins.lsp",    cond = (function() return not vim.g.vscode end) },
     { import = "plugins.snippets", cond = (function() return not vim.g.vscode end) },
