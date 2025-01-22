@@ -1,4 +1,10 @@
 theme = rose-pine
 background = 000000
 font-family = "MesloLGS Nerd Font Mono"
-font-size = 15
+font-size = 14
+
+shell-integration-features = no-cursor
+cursor-style = block
+
+# this might be a mac only display setting
+window-colorspace = display-p3
